@@ -81,15 +81,39 @@ class HomePage extends StatelessWidget {
                         color: Color.fromRGBO(94, 92, 228, 1),
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                       ),
-                    ),
-                    SizedBox(height: 3),
-                    Container(
-                      width: 300,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: Center(
+                        child: Text(
+                          "Sign Up with Email ID",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ),
+                    ),
+                    SizedBox(height: 2),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 300,
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+
+                          child: Center(
+                            child: Text(
+                              "Sign Up with Google",
+                              style: TextStyle(
+                                color: const Color.fromARGB(255, 0, 0, 0),
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
