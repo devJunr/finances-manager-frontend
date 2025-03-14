@@ -103,14 +103,22 @@ class HomePage extends StatelessWidget {
                             borderRadius: BorderRadius.all(Radius.circular(10)),
                           ),
 
-                          child: Center(
-                            child: Text(
-                              "Sign Up with Google",
-                              style: TextStyle(
-                                color: const Color.fromARGB(255, 0, 0, 0),
-                                fontWeight: FontWeight.w400,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.network(
+                                'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png',
+                                width: 20,
                               ),
-                            ),
+                              SizedBox(width: 8),
+                              Text(
+                                "Sign Up with Email ID",
+                                style: TextStyle(
+                                  color: const Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
