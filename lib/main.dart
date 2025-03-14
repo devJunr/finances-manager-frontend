@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color.fromRGBO(0, 0, 0, 1),
         body: Padding(
-          padding: const EdgeInsets.all(100),
+          padding: const EdgeInsets.symmetric(vertical: 100),
           child: Center(
             child: Column(
               spacing: 2,
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(150)),
                   ),
                 ),
-                const SizedBox(width: 5),
+
                 Container(
                   width: 40,
                   height: 40,
@@ -71,6 +71,24 @@ class HomePage extends StatelessWidget {
                         color: const Color.fromARGB(255, 153, 153, 153),
                         fontSize: 15,
                         fontWeight: FontWeight.w100,
+                      ),
+                    ),
+                    SizedBox(height: 200, width: 400),
+                    Container(
+                      width: 300,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(94, 92, 228, 1),
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
+                    ),
+                    SizedBox(height: 3),
+                    Container(
+                      width: 300,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(255, 255, 255, 1),
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
                       ),
                     ),
                   ],
