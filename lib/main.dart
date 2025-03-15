@@ -18,15 +18,33 @@ class HomePage extends StatelessWidget {
             child: Column(
               spacing: 2,
               children: [
-                Container(
-                  width: 40,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(94, 92, 228, 1),
-                    borderRadius: BorderRadius.all(Radius.circular(150)),
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  spacing: 5,
+                  children: [
+                    Container(
+                      width: 40,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(94, 92, 228, 1),
+                        borderRadius: BorderRadius.all(Radius.circular(100)),
+                      ),
+                    ),
+                    Container(
+                      width: 40,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(94, 92, 228, 1),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(100),
+                          bottomLeft: Radius.circular(100),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-
+                // Elemento 4 à direita
                 Container(
                   width: 40,
                   height: 40,
@@ -73,56 +91,82 @@ class HomePage extends StatelessWidget {
                         fontWeight: FontWeight.w100,
                       ),
                     ),
-                    SizedBox(height: 200, width: 400),
-                    Container(
-                      width: 300,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(94, 92, 228, 1),
+
+                    SizedBox(height: 100, width: 400),
+                    Material(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: InkWell(
+                        onTap:
+                            () => {
+                              print("Botão de login com email ID clicado"),
+                            },
                         borderRadius: BorderRadius.all(Radius.circular(10)),
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Sign Up with Email ID",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
+                        child: Container(
+                          width: 300,
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(94, 92, 228, 1),
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Sign Up with Email ID",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(height: 2),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 300,
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                            borderRadius: BorderRadius.all(Radius.circular(10)),
-                          ),
 
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image.network(
-                                'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png',
-                                width: 20,
-                              ),
-                              SizedBox(width: 8),
-                              Text(
-                                "Sign Up with Email ID",
-                                style: TextStyle(
-                                  color: const Color.fromARGB(255, 0, 0, 0),
-                                  fontWeight: FontWeight.w400,
+                    SizedBox(height: 2),
+                    Material(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          InkWell(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            onTap:
+                                () => {
+                                  print("Botão de login com google clicado"),
+                                },
+                            child: Container(
+                              width: 300,
+                              height: 40,
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(255, 255, 255, 1),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10),
                                 ),
                               ),
-                              SizedBox(width: 25),
-                            ],
+
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.network(
+                                    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png',
+                                    width: 20,
+                                  ),
+                                  SizedBox(width: 8),
+                                  Text(
+                                    "Sign Up with Email ID",
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  SizedBox(width: 25),
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
