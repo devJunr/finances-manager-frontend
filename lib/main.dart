@@ -118,6 +118,7 @@ class HomePage extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
+                              SizedBox(width: 25),
                             ],
                           ),
                         ),
