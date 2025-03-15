@@ -1,16 +1,25 @@
-# finances_manager
+# Front-End Login - Finances Manager
+--
+## 👨🏻‍💻 Construção
+Feito com flutter e dart, permitindo uma disponibilidade maior com um único código, tanto para windows, linux, android, e web.
 
-A new Flutter project.
+## 👨🏻‍💻 Tecnologias Utilizadas
+[![Linguagens](https://skillicons.dev/icons?i=flutter,dart,vscode)]()
 
-## Getting Started
+## 👨🏻‍💻 Como reutilizar o código desse repositorio ?
+- Adicione uma estrela ao repositorio
+- Execute o comando para fazer o clone do repositorio `git clone https://github.com/devJunr/finances-manager-frontend`
+- Use a IDE de preferencia para editar os arquivos
+- Tenha o flutter instalado em sua máquina para rodar o projeto
 
-This project is a starting point for a Flutter application.
+## 👨🏻‍💻 Como rodar o projeto ?
+- Tenha os itens solicitados na etapa anterior (**Como reutilizar o código desse repositorio ?**)
+- No diretorio do projeto, execute o comando para build: 
+`flutter build`
+- Após o build ser concluido, execute o comando para iniciar o projeto: 
+`flutter run`
 
-A few resources to get you started if this is your first Flutter project:
+## 👨🏻‍💻 Imagens
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+<p align="center"> ⌨️ com ❤️ por <a href="https://github.com/devjunr">Adriano J.</a></p>
