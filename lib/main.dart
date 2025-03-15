@@ -148,9 +148,9 @@ class HomePage extends StatelessWidget {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Image.network(
-                                    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png',
-                                    width: 20,
+                                  Image.asset(
+                                    'assets/Google_Logo.png',
+                                    width: 25,
                                   ),
                                   SizedBox(width: 8),
                                   Text(
