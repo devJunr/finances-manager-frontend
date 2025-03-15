@@ -23,14 +23,32 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   spacing: 5,
                   children: [
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(94, 92, 228, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(100)),
-                      ),
+                    Column(
+                      spacing: 2,
+                      children: [
+                        Container(
+                          width: 35,
+                          height: 35,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(94, 92, 228, 1),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(100),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 40,
+                          height: 35,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(94, 92, 228, 1),
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(100),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
+
                     Container(
                       width: 40,
                       height: 80,
@@ -44,18 +62,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                // Elemento 4 à direita
-                Container(
-                  width: 40,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(94, 92, 228, 1),
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(100),
-                    ),
-                  ),
-                ),
 
+                // Elemento 4 à direita
                 Column(
                   spacing: 2,
                   children: [
