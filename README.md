@@ -1,5 +1,5 @@
 # Front-End Login - Finances Manager
---
+
 ## 👨🏻‍💻 Construção
 Feito com flutter e dart, permitindo uma disponibilidade maior com um único código, tanto para windows, linux, android, e web.
 
@@ -20,6 +20,11 @@ Feito com flutter e dart, permitindo uma disponibilidade maior com um único có
 `flutter run`
 
 ## 👨🏻‍💻 Imagens
+### Mobile
+![image](https://github.com/user-attachments/assets/44e2772b-0b6b-4636-9399-139a14d38b1a)
+
+### Pc (Independente da plataforma) e Web
+![image](https://github.com/user-attachments/assets/ee2eee06-877a-4b85-8907-5310c7960319)
 
 ---
 <p align="center"> ⌨️ com ❤️ por <a href="https://github.com/devjunr">Adriano J.</a></p>
