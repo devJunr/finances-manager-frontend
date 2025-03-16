@@ -162,13 +162,13 @@ class HomePage extends StatelessWidget {
                                   ),
                                   SizedBox(width: 8),
                                   Text(
-                                    "Sign Up with Email ID",
+                                    "Sign Up with Google",
                                     style: TextStyle(
                                       color: const Color.fromARGB(255, 0, 0, 0),
                                       fontWeight: FontWeight.w400,
                                     ),
                                   ),
-                                  SizedBox(width: 25),
+                                  SizedBox(width: 40),
                                 ],
                               ),
                             ),
