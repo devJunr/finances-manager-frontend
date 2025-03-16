@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(
                         color: const Color.fromARGB(255, 153, 153, 153),
                         fontSize: 15,
-                        fontWeight: FontWeight.w100,
+                        fontWeight: FontWeight.w300,
                       ),
                     ),
                     Text(
@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(
                         color: const Color.fromARGB(255, 153, 153, 153),
                         fontSize: 15,
-                        fontWeight: FontWeight.w100,
+                        fontWeight: FontWeight.w300,
                       ),
                     ),
 
